@@ -373,9 +373,7 @@ dt, dd{
 .titrePage{
   background-color:#ffffff;
   color:black;
-  padding-top:18px;
-  padding-bottom:18px;
-  padding-left:20px;
+  padding: 18px 30px;
   height:auto;
   background-image:none;
   font-weight: 300;
@@ -510,6 +508,7 @@ dt, dd{
 
 #thumbnails{
   margin-left:0 !important; 
+  padding: 0 30px;
 }
 
 #menubar dt a:first-child, #menubar dt a:last-child{
@@ -733,6 +732,17 @@ h2 .calendarTitle{
   padding:10px;
   text-decoration:none !important;
   border:1px solid #777;
+}
+
+.navigationBar a,
+.navigationBar .pageNumberSelected {
+  padding: 16px 8px;
+  background-color: transparent;
+  transition: background-color .4s;
+}
+
+.navigationBar a:hover {
+  text-decoration: none;
 }
 
 .content .navigationBar, .content .navigationBar:hover {
