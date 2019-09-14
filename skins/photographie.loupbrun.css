@@ -19,13 +19,14 @@ strong, h1, h2, h3, h3, h4, h5, h6 {
 
 #theHeader {
   padding: 40px 30px 2px;
+  line-height: 1.15;
 }
 #theHeader .brand--header__title {
   font-weight: 500;
   font-size: 20px;
   color: #000000;
   display: inline-block;
-  margin-bottom: .1em;
+  margin-bottom: .05em;
 }
 #theHeader .brand--header__subtitle {
   font-weight: 300;
@@ -373,7 +374,7 @@ dt, dd{
 .titrePage{
   background-color:#ffffff;
   color:black;
-  padding: 18px 30px;
+  padding: 8px 30px;
   height:auto;
   background-image:none;
   font-weight: 300;
