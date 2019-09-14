@@ -17,8 +17,35 @@ strong, h1, h2, h3, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+#theHeader {
+  padding: 40px 30px 2px;
+}
+#theHeader .brand--header__title {
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+  display: inline-block;
+  margin-bottom: .1em;
+}
+#theHeader .brand--header__subtitle {
+  font-weight: 300;
+  font-size: 14px;
+  color: #777;
+  display: inline-block;
+}
+
+.hr--small {
+  width: 1em;
+  border: 0;
+  background-color: #000;
+  outline: 0;
+  margin: .75em 0;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 2px;
+}
+
 #theHeader div.banner, #theHeader div.banner:hover{
-  color:white;
   text-shadow:none;  
 }
 
@@ -58,13 +85,13 @@ strong, h1, h2, h3, h3, h4, h5, h6 {
 h2{
   color:black;
   padding:2px 5px 0px 0px;
-  font-size:17px;
+  font-size:18px;
 }
 
 .albLegend{
-  color:white;
+  color:#ffffff;
   height:45px;
-  padding:5px 0;
+  padding:12px 6px;
 }
 
 .albSymbol{
@@ -92,7 +119,7 @@ a:hover{
   color: #000000;
   padding-top: 20px;
   padding-bottom:20px;
-  padding-left:16px;
+  padding-left:30px;
   font-weight:300;
   width:auto;
 }
@@ -192,7 +219,7 @@ INPUT[type="submit"] {
 
 .wide #imageToolBar{
   background-color:white;
-  padding:15px 5px 10px 5px;
+  padding:10px 30px;
 }
 
 #imageToolBar{
@@ -204,8 +231,8 @@ INPUT[type="submit"] {
 }
 
 .switchBox{
-  background-color:#383838;
-  box-shadow:none;
+  background-color:#ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
 li, #mbCategories UL{
@@ -281,6 +308,9 @@ li, #mbCategories UL{
   padding-bottom:15px;
 }
 
+#imageHeaderBar {
+  padding: 0 30px;
+}
 #imageHeaderBar .imageNumber{
   color:#000000;
 }
@@ -343,8 +373,8 @@ dt, dd{
 .titrePage{
   background-color:#ffffff;
   color:black;
-  padding-top:30px;
-  padding-bottom:20px;
+  padding-top:18px;
+  padding-bottom:18px;
   padding-left:20px;
   height:auto;
   background-image:none;
@@ -387,6 +417,8 @@ dt, dd{
 
 .browsePath{
   color:black;
+  
+  display: none;
 }
 
 #thePicturePage .titrePage{
@@ -842,6 +874,38 @@ td .nbEntries{
 
 .notification a{
   text-decoration:underline;
+}
+
+/**
+ * The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */
+.StripeElement {
+  box-sizing: border-box;
+
+  height: 40px;
+
+  padding: 10px 12px;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: white;
+
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
 }
 
 @media screen and (max-width: 640px){

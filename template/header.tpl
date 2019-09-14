@@ -32,6 +32,7 @@
 {*combine_script id='jquery' load='footer'*}
 {if not empty($head_elements)}{foreach from=$head_elements item=elt}{$elt}
 {/foreach}{/if}
+  
 </head>
 
 <body id={$BODY_ID}{if !empty($PAGE_BANNER) && $MODUS_DISPLAY_PAGE_BANNER} class="modus-withPageBanner"{/if}>
