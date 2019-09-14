@@ -82,7 +82,7 @@
 </dl>
 {if isset($U_LOGIN)}
 <dl style="float:right;margin-top:3px">
-	<dt style="font-size:100%;font-weight:normal;padding-left:15px{*to avoid loosing hover*}"><a href="{$U_LOGIN}" rel=nofollow>{'Login'|@translate}</a></dt>
+	<dt style="padding-left:15px{*to avoid loosing hover*}"><a href="{$U_LOGIN}" rel=nofollow>{'Login'|@translate}</a></dt>
 	<dd style="right:0">
 		<ul>
 		<li><a href="{$U_LOGIN}" rel="nofollow">{'Login'|@translate}</a></li>
@@ -123,7 +123,7 @@
 {/if}
 {if isset($U_LOGOUT)}
 <dl style="float:right;margin-top:3px">
-	<dt style="font-size:100%;font-weight:normal">
+	<dt>
 	{if isset($USERNAME)}{'Hello'|@translate} {if isset($U_PROFILE)}<a href="{$U_PROFILE}">{/if}{$USERNAME}{if isset($U_PROFILE)}</a>{/if} ! &nbsp;{/if}
 	<a href="{$U_LOGOUT}">{'Logout'|@translate}</a>
 	{if isset($U_PROFILE)}

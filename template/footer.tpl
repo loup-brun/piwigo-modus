@@ -8,13 +8,7 @@
 			to show the origin of the script...
 *}
 	{'Powered by'|@translate}	<a href="{$PHPWG_URL}">Piwigo</a>
-	{$VERSION}
-	{if isset($CONTACT_MAIL)}
-	- <a href="mailto:{$CONTACT_MAIL}?subject={'A comment on your site'|@translate|@escape:url}">{'Contact webmaster'|@translate}</a>
-	{/if}
-	{if isset($TOGGLE_MOBILE_THEME_URL)}
-	- {'View in'|@translate} : <a href="{$TOGGLE_MOBILE_THEME_URL}">{'Mobile'|@translate}</a> | <b>{'Desktop'|@translate}</b>
-	{/if}
+    et fièrement hébergé par <a href="https://loupbrun.ca">Louis-Oilivier Brassard</a>.
 
 {get_combined_scripts load='footer'}
 {if isset($footer_elements)}
