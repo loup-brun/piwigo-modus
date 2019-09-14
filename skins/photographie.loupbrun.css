@@ -931,6 +931,7 @@ td .nbEntries{
     display:block;
   }
   #menuSwitcher{
+    display: none;
     padding-top:22px;
     padding-left:10px;
   }
