@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang={$lang_info.code} dir={$lang_info.direction}>
 <head>
+<script>document.getElementsByTagName("html")[0].className += " js";</script>
 <title>{if $PAGE_TITLE=='Home'|@translate}{$GALLERY_TITLE}{else}{$PAGE_TITLE}{/if}</title>
 <link rel="shortcut icon" type="image/x-icon" href="{$ROOT_URL}{$themeconf.icon_dir}/favicon.ico">
 <!--<link rel="stylesheet" type="text/css" href="themes/{$themeconf.id}/css/open-sans/open-sans.css">-->
@@ -32,6 +33,12 @@
 {*combine_script id='jquery' load='footer'*}
 {if not empty($head_elements)}{foreach from=$head_elements item=elt}{$elt}
 {/foreach}{/if}
+  
+  <!-- BEGIN Codyhouse stuff -->
+  {combine_css path="themes/`$themeconf.id`/css/drawer.css"}
+  {combine_script id="util" path="themes/{$themeconf.id}/js/util.js" load='footer'}
+  {combine_script id="drawer" path="themes/{$themeconf.id}/js/drawer.js" load='footer'}
+  <!-- END Codyhouse stuff -->
   
 </head>
 
