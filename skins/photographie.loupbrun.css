@@ -292,7 +292,7 @@ li, #mbCategories UL{
 }
 
 .imageInfoTable a, .imageInfoTable a:hover{
-  color:white;
+  color: #000000;
 }
 
 .wide .imageInfoTable, .wide #imageInfos a, .wide #imageInfos h3{
